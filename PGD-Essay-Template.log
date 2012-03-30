@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.7.16)  30 MAR 2012 09:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.7.16)  30 MAR 2012 16:44
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
-**PGD-Essay-Template-2011_12.tex
-(./PGD-Essay-Template-2011_12.tex
+**PGD-Essay-Template.tex
+(./PGD-Essay-Template.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
@@ -323,8 +323,8 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count116
 \listing@line=\count117
 )
-(./PGD-Essay-Template-2011_12.aux)
-\openout1 = `PGD-Essay-Template-2011_12.aux'.
+(./PGD-Essay-Template.aux)
+\openout1 = `PGD-Essay-Template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
 LaTeX Font Info:    ... okay on input line 153.
@@ -407,9 +407,9 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 LaTeX Info: Redefining \ref on input line 153.
 LaTeX Info: Redefining \pageref on input line 153.
 
-(./PGD-Essay-Template-2011_12.out) (./PGD-Essay-Template-2011_12.out)
+(./PGD-Essay-Template.out) (./PGD-Essay-Template.out)
 \@outlinefile=\write4
-\openout4 = `PGD-Essay-Template-2011_12.out'.
+\openout4 = `PGD-Essay-Template.out'.
 
 \AtBeginShipoutBox=\box29
 LaTeX Font Info:    Try loading font information for U+msa on input line 170.
@@ -441,9 +441,9 @@ File: images/AIMS_Logo_square-300.jpg Graphic file (type jpg)
 300.jpg>] [2] (./abstract.tex [1
 
 ])
-[2] (./PGD-Essay-Template-2011_12.toc)
+[2] (./PGD-Essay-Template.toc)
 \tf@toc=\write5
-\openout5 = `PGD-Essay-Template-2011_12.toc'.
+\openout5 = `PGD-Essay-Template.toc'.
 
  [3
 
@@ -489,24 +489,24 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
  4.
 ) (./acknowledgement.tex [7
 
-]) (./PGD-Essay-Template-2011_12.bbl [8
+]) (./PGD-Essay-Template.bbl [8
 
 ]) [9
 
 ]
-(./PGD-Essay-Template-2011_12.aux)
+(./PGD-Essay-Template.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
  5863 strings out of 493848
- 82269 string characters out of 1152823
+ 82133 string characters out of 1152823
  157225 words of memory out of 3000000
  8930 multiletter control sequences out of 15000+50000
  14150 words of font info for 55 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 45i,9n,36p,999b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,9n,36p,991b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-texlive/fonts/
@@ -517,7 +517,7 @@ pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
 share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on PGD-Essay-Template-2011_12.pdf (14 pages, 210512 bytes).
+Output written on PGD-Essay-Template.pdf (14 pages, 210513 bytes).
 PDF statistics:
  254 PDF objects out of 1000 (max. 8388607)
  64 named destinations out of 1000 (max. 500000)
