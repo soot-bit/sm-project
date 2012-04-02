@@ -5,7 +5,7 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{AST92}
+\begin{thebibliography}{Web12}
 
 \bibitem[AST92]{AD92}
 Alan Adolphson, Steven Sperber, and Marvin Tretkoff (eds.), \emph{$p$-adic
@@ -38,7 +38,7 @@ D.~J.~C. MacKay, \emph{A free energy minimization framework for inference
 
 \bibitem[MN95]{mnc4pfoutdated}
 D.~J.~C. MacKay and R.~M. Neal, \emph{Good codes based on very sparse
-  matrices}, Available from {\tt http://www.inference.phy.cam.ac.uk/}, 1995.
+  matrices}, Available from \url{www.inference.phy.cam.ac.uk}, 1995.
 
 \bibitem[Sha48]{Shannon48}
 C.~E. Shannon, \emph{A mathematical theory of communication}, Bell Sys. Tech.
@@ -49,8 +49,8 @@ C.~E. Shannon, \emph{A mathematical theory of communication}, Bell Sys. Tech.
   Shannon (N.~J.~A. Sloane and A.~D. Wyner, eds.), IEEE Press, New York, 1993,
   pp.~148--150.
 
-\bibitem[Web]{Webots}
-Webots, \emph{http://www.cyberbotics.com}, Commercial Mobile Robot Simulation
-  Software.
+\bibitem[Web12]{Webots}
+Webots, \emph{Commercial mobile robot simulation software}, 2012,
+  \url{www.cyberbotics.com}.
 
 \end{thebibliography}
