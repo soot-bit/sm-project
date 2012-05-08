@@ -10,6 +10,7 @@
 \parindent=0pt
 \renewcommand{\familydefault}{\sfdefault}
 \raggedright
+\raggedbottom % should be default already?
 
 % AMS packages.
 \RequirePackage{amsmath}
