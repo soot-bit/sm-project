@@ -40,12 +40,6 @@
     \parindent0pt\raggedright\large\bf
     \@chapapp \thechapter\hskip15pt #1\vskip15pt}}
 
-% appendix command changes chapter headings to say "Appendix"
-\def\appendix{\setcounter{chapter}{0}\setcounter{section}{0}\def\thechapter{\Alph{chapter}}\def\@chapapp{Appendix }}
-\def\endappendix{\setcounter{chapter}{0}\setcounter{section}{0}\def\thechapter{\Alph{chapter}}\def\@chapapp{}}
-%\def\reference{\setcounter{chapter}{0}\setcounter{section}{0}\def\thechapter{References}}\def\@chapapp{Reference }
-
-
 % Running headers
 %\headheight12pt
 \def\ps@myheadings{%
