@@ -11,6 +11,7 @@
 % will be much more strict on the house style.
 %
 \documentclass{aimsessay}
+\usepackage[round]{natbib}
 %
 %-----------------------------------------------------------------------------
 % To use external packages for specific needs, 
@@ -218,15 +219,11 @@ African Institute for Mathematical Sciences (AIMS)\\
 %-----------------------------------------------------------------------------
 % THE BIBLIOGRAPHY 
 % Bibliography styles define how the bibliography is 
-% listed and formatted.
-% AMS alpha is a human-friendly bibliography style which
-% we use by default here.  You are encouraged to use it.
-% If your supervisor and tutor confirms that the field 
-% you work in (physics, finance, etc.) generally use another
-% style than amsalpha, then you may change to that style.
+% listed and formatted. This is part of the AIMS house
+% style and is only changed under exceptional circumstances
 \renewcommand{\bibname}{References}
 \nocite{*}
-\bibliographystyle{amsalpha}
+\bibliographystyle{plainnat}
 \bibliography{PGD-Essay-Template}
 \addcontentsline{toc}{chapter}{References}
 %-----------------------------------------------------------------------------
