@@ -9,6 +9,7 @@
 \parskip=0.5\baselineskip
 \parindent=0pt
 \renewcommand{\familydefault}{\sfdefault}
+\raggedright
 
 % AMS packages.
 \RequirePackage{amsmath}
