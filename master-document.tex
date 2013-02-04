@@ -20,6 +20,13 @@
 %
 % Examples:
 %
+% For Arabic
+%\usepackage[utf8]{inputenc}
+%\usepackage[english,arabic]{babel}
+%\usepackage{arabtex}
+%\usepackage{utf8}
+%\setcode{utf8}
+%\usepackage[LAE,LFE]{fontenc}
 % For tables:
 \usepackage{booktabs} % \toprule, \midrule, \bottomrule
 \usepackage{array}    % \newcolumntype
@@ -77,27 +84,6 @@
 % 
 \numberwithin{equation}{section}
 % 
-%-----------------------------------------------------------------------------
-% Abstracts are usually written in English, with a version in your
-% mother tongue underneath.
-%
-% French, Igbo, Malagasy, etc. students use normal latex
-% for special characters, for example \'{e}
-%
-% Amharic students use openoffice to write Amharic,
-% export and include a figure.
-%
-% Arabic students uncomment this line to write your abstract, 
-% and see the example below:
-%\usepackage{arabtex}                         
-%\usepackage{utf8} 
-%\setcode{utf8}    
-% Then in the MAIN BODY use this:                  
-%% \begin{RLtext}    
-%% Here is where the arabic text goes.
-%% You can just type it with an arabic keyboard
-%% \end{RLtext}\\
-%-----------------------------------------------------------------------------
 % Your own command shortcuts can go here
 % keep them clearly separate from other sections of the preamble
 % It is good style to have only a few of these so that
@@ -117,7 +103,7 @@
 % Title & Author
 % On this page you must have NO full-word capitalizations, bold, or colour. 
 % All AIMS essays per year have the same title page.
-% In English your family name is written last, and with 
+% In English your family name is written last, i.e. Firstname LASTNAME
 % English Capitalization, not as in some Francophone countries where
 % you write LASTNAME, Firstname.
 % Put your AIMS email address only please, for consistency,
@@ -131,9 +117,9 @@
 % after the english one
 % Uncomment the next four lines and edit the name
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{RLtext}
+%\begin{otherlanguage}{arabic}
 % شةشىغ
-%\end{RLtext}
+%\end{otherlanguage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Amharic students speak to me about how to add your name in your own alphabet.
 % Everything here is prescribed; do not enter bold or ALL CAPS here,
@@ -144,16 +130,16 @@ African Institute for Mathematical Sciences (AIMS)\\
 % Supervised by Professor Barry Green
 % University of Stellenbosch, South Africa
 % Example2
-% Supervised by Doctor Ingrid Rewitzk
+% Supervised by Doctor Ingrid Rewitzky
 % University of Stellenbosch, South Africa
 {\small Supervised by: Title Firstname Lastname}\\
 {\small Institute of Supervisor, Country}%
 % Don't put the department, it becomes too long.
 }
-\date{{\small 17 May 2012}\\%
+\date{{\small 23 May 2013}\\%
   {\scriptsize\it Submitted in partial fulfillment of 
-    a postgraduate diploma at AIMS}\\%
-  \vspace{2cm}{\includegraphics{images/AIMS_Logo_square-300.jpg}}}
+    a structured masters degree at AIMS South Africa}\\%
+  \vspace{1cm}{\includegraphics{images/AIMS_Logo_square-300.jpg}}}
 %-------------------------------------------------------------------------
 \begin{document}
 \pagestyle{empty}
@@ -225,7 +211,7 @@ African Institute for Mathematical Sciences (AIMS)\\
 \renewcommand{\bibname}{References}
 \nocite{*}
 \bibliographystyle{plainnat}
-\bibliography{PGD-Essay-Template}
+\bibliography{references}
 \addcontentsline{toc}{chapter}{References}
 %-----------------------------------------------------------------------------
 \end{document}
