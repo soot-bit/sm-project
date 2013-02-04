@@ -11,6 +11,7 @@
 % will be much more strict on the house style.
 %
 \documentclass{aimsessay}
+\usepackage[utf8]{inputenc}
 \usepackage[round]{natbib}
 %
 %-----------------------------------------------------------------------------
@@ -21,12 +22,11 @@
 % Examples:
 %
 % For Arabic
-%\usepackage[utf8]{inputenc}
-%\usepackage[english,arabic]{babel}
-%\usepackage{arabtex}
-%\usepackage{utf8}
-%\setcode{utf8}
-%\usepackage[LAE,LFE]{fontenc}
+\usepackage[arabic,english]{babel}
+\usepackage{arabtex}
+\usepackage{utf8}
+\setcode{utf8}
+\usepackage[LAE,LFE]{fontenc}
 % For tables:
 \usepackage{booktabs} % \toprule, \midrule, \bottomrule
 \usepackage{array}    % \newcolumntype
@@ -83,7 +83,29 @@
 % and Example numbers though! Number equations by sections.
 % 
 \numberwithin{equation}{section}
-% 
+%
+%-----------------------------------------------------------------------------
+% Abstracts are usually written in English, with a version in your
+% mother tongue underneath.
+%
+% French, Igbo, Malagasy, etc. students use normal latex
+% for special characters, for example \'{e}
+%
+% Amharic students use openoffice to write Amharic,
+% export and include a figure.
+%
+% Arabic students uncomment this line to write your abstract, 
+% and see the example below:
+%\usepackage{arabtex}                         
+%\usepackage{utf8} 
+%\setcode{utf8}    
+%% Then in the MAIN BODY use this:                  
+%\begin{RLtext}    
+%Here is where the arabic text goes.
+%You can just type it with an arabic keyboard
+%\end{RLtext}\\
+%-----------------------------------------------------------------------------
+ 
 % Your own command shortcuts can go here
 % keep them clearly separate from other sections of the preamble
 % It is good style to have only a few of these so that
@@ -114,12 +136,12 @@
 \author{Firstname Middlename Familyname (email@aims.ac.za)\\
 % Igbo, French students, put your special characters above.
 % Arabic students can add their name in Arabic letters below, 
-% after the english one
+% after the English one
 % Uncomment the next four lines and edit the name
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{otherlanguage}{arabic}
-% شةشىغ
-%\end{otherlanguage}
+\begin{otherlanguage}{arabic}
+شةشىغ
+\end{otherlanguage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Amharic students speak to me about how to add your name in your own alphabet.
 % Everything here is prescribed; do not enter bold or ALL CAPS here,
@@ -142,6 +164,7 @@ African Institute for Mathematical Sciences (AIMS)\\
   \vspace{1cm}{\includegraphics{images/AIMS_Logo_square-300.jpg}}}
 %-------------------------------------------------------------------------
 \begin{document}
+\selectlanguage{english}
 \pagestyle{empty}
 \maketitle
 % All other files are included via \input. 
@@ -172,13 +195,13 @@ African Institute for Mathematical Sciences (AIMS)\\
 \newpage
 % We switch to arabic numerals here where your page count starts
 % Essays must be 25-30 pages long *starting here* and up to and including
-% the conlcusion. It does not include the acknowledgements or references.
+% the conclcusion. It does not include the acknowledgements or references.
 % 
 % Figures may differ between topics, but they are not there
 % to fill the pages -- they must add meaning.
 % In general most figures should be 0.8 times the width of the page
-% (perhaps wider when two or three columns of figures)
-% See the example in chapter one for defining that. B1e *consistent*
+% (perhaps wider in total when two or three columns of figures)
+% See the example in chapter one for defining that. Be *consistent*
 % in your presentation of information.
 \pagenumbering{arabic}
 \pagestyle{myheadings}

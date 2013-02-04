@@ -56,22 +56,6 @@
     \markright {\ifnum \c@secnumdepth >\z@ Section \thesection.\ ##1\fi }}%
 }
 
-% Unused?
-% % an emphasized box (a border, really)
-% \long\def\embox#1{{%
-%    \leavevmode\vskip-2mm\noindent
-%    \hbox to\textwidth{\hfill
-%       \fboxsep=5mm
-%       \fbox{
-%                         \hsize=\textwidth
-%                         \advance\hsize -2cm\noindent
-%                         \begin{minipage}{\hsize}
-%                 \em #1
-%                         \end{minipage}
-%          \noindent}%
-%       \hfill}%
-%    \vskip1mm}\noindent}
-
 % Make "\subsection" behave like the top of a theorem (in terms of spacing).
 \renewcommand{\subsection}{\@ifstar{\aims@subsection}{\aims@subsection}}
 \newcommand{\aims@subsection}[1]{%
