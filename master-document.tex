@@ -22,11 +22,9 @@
 % Examples:
 %
 % For Arabic
-\usepackage[english,arabic]{babel}
 \usepackage{arabtex}
 \usepackage{utf8}
 \setcode{utf8}
-\usepackage[LAE,LFE]{fontenc}
 % For tables:
 \usepackage{booktabs} % \toprule, \midrule, \bottomrule
 \usepackage{array}    % \newcolumntype
@@ -88,18 +86,12 @@
 % Abstracts are usually written in English, with a version in your
 % mother tongue underneath.
 %
-% French, Igbo, Malagasy, etc. students use normal latex
+% French, Igbo, Malagasy, etc. students use normal LaTeX
 % for special characters, for example \'{e}
 %
-% Amharic students use openoffice to write Amharic,
+% Amharic students use LibreOffice to write Amharic,
 % export and include a figure.
 %
-% Arabic students uncomment this line to write your abstract, 
-% and see the example below:
-%\usepackage{arabtex}                         
-%\usepackage{utf8} 
-%\setcode{utf8}    
-%% Then in the MAIN BODY use this:                  
 %\begin{RLtext}    
 %Here is where the arabic text goes.
 %You can just type it with an arabic keyboard
@@ -134,15 +126,14 @@
 % Your name must be in English Capitalisation with no comma, 
 % and the Family name comes last.
 \author{Firstname Middlename Familyname (email@aims.ac.za)\\
-% Igbo, French students, put your special characters above.
-% Arabic students can add their name in Arabic letters below, 
-% after the English one
-% Uncomment the next four lines and edit the name
+% Then in the MAIN BODY use this:                  
+\begin{RLtext}    
+سشمششة شمثهنعة
+\end{RLtext}\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{otherlanguage}{arabic}
-شةشىغ
-\end{otherlanguage}\\
-\selectlanguage{english}
+%\begin{otherlanguage}{arabic}
+%شةشىغ
+%\end{otherlanguage}\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Amharic students speak to me about how to add your name in your own alphabet.
 % Everything here is prescribed; do not enter bold or ALL CAPS here,
@@ -165,7 +156,7 @@ African Institute for Mathematical Sciences (AIMS)\\
   \vspace{1cm}{\includegraphics{images/AIMS_Logo_square-300.jpg}}}
 %-------------------------------------------------------------------------
 \begin{document}
-\selectlanguage{english}
+%\selectlanguage{english}
 \pagestyle{empty}
 \maketitle
 % All other files are included via \input. 
