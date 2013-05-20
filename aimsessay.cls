@@ -86,3 +86,7 @@
 % Do not show subsections and theorems in Table of Contents
 \AtBeginDocument{\setcounter{tocdepth}{1}}
 
+% Some few people still use appendices. We discourage them. To use it, make a normal chapter, but put \appendix in the first line and \endappendix in the last line.
+\def\appendix{\setcounter{chapter}{0}\setcounter{section}{0}\def\thechapter{\Alph{chapter}}\def\@chapapp{Appendix }}
+\def\endappendix{\setcounter{chapter}{0}\setcounter{section}{0}\def\thechapter{\Alph{chapter}}\def\@chapapp{}}
+
