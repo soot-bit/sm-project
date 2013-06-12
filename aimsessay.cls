@@ -9,7 +9,8 @@
 \parskip=0.5\baselineskip
 \parindent=0pt
 \renewcommand{\familydefault}{\sfdefault}
-\raggedright
+%I prefer raggedright, but most people prefer justified.
+%\raggedright
 \raggedbottom % should be default already?
 
 % AMS packages.
