@@ -28,7 +28,10 @@
 % should not override general AIMS house style and layout).
 %
 % Examples:
-%
+% 
+% Load caption before arabtex
+\usepackage{caption} %many figures in one figure (note subfigure and subfig are deprecated) 
+\usepackage{subcaption} %many figures in one figure (note subfigure and subfig are deprecated) 
 % For Arabic
 \usepackage{arabtex}
 \usepackage{utf8}
@@ -40,8 +43,6 @@
 % For figures:
 \usepackage[below,section]{placeins} % use \FloatBarrier in the body to really force a float somewhere. Please limit use.
 % \usepackage{float}  %"H" placement spec, for **really here** (i.e. not float)
-\usepackage{caption} %many figures in one figure (note subfigure and subfig are deprecated)
-\usepackage{subcaption} %many figures in one figure (note subfigure and subfig are deprecated)
 %
 % For code and algorithms
 \usepackage{moreverb}   % \verbatimtabinput
