@@ -11,6 +11,7 @@
 % will be much more strict on the house style.
 %
 \documentclass{aimsessay}
+% \usepackage{etex} % fix for using xy and tikz in the same document
 \usepackage[utf8]{inputenc}
 \usepackage[round]{natbib}
 \usepackage{amsmath}
@@ -50,7 +51,7 @@
                         % than moreverb and algorithm
 % 
 % Others
-% \usepackage[all]{xy} 
+% \usepackage[all]{xy}  %  if you use this uncomment \usepackage{etex} above to fix a conflict with tikz.
 % \usepackage{sagetex}
 % \usepackage{siunitx} % to typeset numbers, units, align decimals in tables.
 % \usepackage{dcolumn} % less flexible but maybe faster than siunitx above.
@@ -185,7 +186,7 @@ African Institute for Mathematical Sciences (AIMS)\\
 \tableofcontents
 \newpage
 % We switch to arabic numerals here where your page count starts
-% Essays must be 25-30 pages long *starting here* and up to and including
+% Essays must be close to 30 pages long *starting here* and up to and including
 % the conclcusion. It does not include the acknowledgements or references.
 % 
 % Figures may differ between topics, but they are not there
