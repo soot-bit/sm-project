@@ -6,3 +6,4 @@
 *.toc
 *.synctex.gz
 master-document.pdf
+.nfs*
