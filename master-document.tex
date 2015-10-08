@@ -22,6 +22,29 @@
 \usepackage{parskip}
 \usepackage{enumerate}
 \usepackage{tikz}
+\usepackage{lipsum}
+% Fix spacing before theorem environments
+\makeatletter\def\thm@space@setup{%
+  \thm@preskip=1.2\parskip \thm@postskip=0pt
+  }
+%\makeatother
+% Reduce space before proof
+%\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+  \vspace{-\topsep}% remove the space after the theorem
+  \pushQED{\qed}%
+  \normalfont
+  \topsep0pt \partopsep0pt % no space before
+  \trivlist
+  \item[\hskip\labelsep
+        \itshape
+    #1\@addpunct{.}]\ignorespaces
+}{%
+  \popQED\endtrivlist\@endpefalse
+  \addvspace{6pt plus 6pt} % some space after
+}
+\makeatother
+% Reduce spacing around section headings?
 %
 %-----------------------------------------------------------------------------
 % To use external packages for specific needs, 
@@ -157,7 +180,7 @@ African Institute for Mathematical Sciences (AIMS)\\
 {\small Institute of Supervisor, Country}%
 % Don't put the department, it becomes too long.
 }
-\date{{\small 21 May 2015}\\%
+\date{{\small 19 May 2016}\\%
   {\scriptsize\it Submitted in partial fulfillment of 
     a structured masters degree at AIMS South Africa}\\%
   \vspace{0.5cm}{\includegraphics{images/AIMS_SA_Logo.pdf}}}
