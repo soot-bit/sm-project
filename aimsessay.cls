@@ -63,7 +63,7 @@
 \renewcommand{\subsection}{\@ifstar{\aims@subsection}{\aims@subsection}}
 \newcommand{\aims@subsection}[1]{%
   \@startsection{subsection}{2}{\z@}{\z@}{\z@}%
-  {\normalfont\normalsize\bfseries}{\unskip~#1.~}}
+  {\normalfont\normalsize\bfseries}{\unskip~#1.~}}%\hfill\break}
 
 %
 % Undefine "\subsubsection", "\paragraph", "\subparagraph" in a nice way.
