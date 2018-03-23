@@ -30,6 +30,9 @@
 
 \RequirePackage[pdftex]{graphicx}
 
+% fix quotation marks like "this"
+\RequirePackage{csquotes}
+\MakeOuterQuote{"}
 
 % Do not show "Chapter" each time
 \def\@chapapp{}
