@@ -63,10 +63,10 @@
 }
 
 % Make "\subsection" behave like the top of a theorem (in terms of spacing).
-\renewcommand{\subsection}{\@ifstar{\aims@subsection}{\aims@subsection}}
-\newcommand{\aims@subsection}[1]{%
-  \@startsection{subsection}{2}{\z@}{\z@}{\z@}%
-  {\normalfont\normalsize\bfseries}{\unskip~#1.~\hfill\break}}%\hfill\break}
+%\renewcommand{\subsection}{\@ifstar{\aims@subsection}{\aims@subsection}}
+%\newcommand{\aims@subsection}[1]{%
+%  \@startsection{subsection}{2}{\z@}{\z@}{\z@}%
+%  {\normalfont\normalsize\bfseries}{\unskip~#1.~\hfill\break}}%\hfill\break}
 
 %
 % Undefine "\subsubsection", "\paragraph", "\subparagraph" in a nice way.
