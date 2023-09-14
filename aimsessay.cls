@@ -24,13 +24,14 @@
 % An additional colour for citecolor= in the hyperref pacakage
 \RequirePackage{color}
 \definecolor{brown}{rgb}{0.5,0.3,0.1}
-\RequirePackage[pdftex,a4paper,%
+\RequirePackage[pdftex,%
     colorlinks=true,urlcolor=blue,citecolor=brown]{hyperref}
 \urlstyle{same}
 
 \RequirePackage[pdftex]{graphicx}
 
 % fix quotation marks like "this"
+% NOTE incompatible with quiver labels
 \RequirePackage{csquotes}
 \MakeOuterQuote{"}
 
