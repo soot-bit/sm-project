@@ -1,0 +1,102 @@
+% \usepackage{etex} % fix for using xy and tikz in the same document
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[round]{natbib}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{parskip}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{lipsum}
+% Fix spacing before theorem environments
+\makeatletter\def\thm@space@setup{%
+  \thm@preskip=1.2\parskip \thm@postskip=0pt
+  }
+%\makeatother
+% Reduce space before proof
+%\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+  \vspace{-\topsep}% remove the space after the theorem
+  \pushQED{\qed}%
+  \normalfont
+  \topsep0pt \partopsep0pt % no space before
+  \trivlist
+  \item[\hskip\labelsep
+        \itshape
+    #1\@addpunct{.}]\ignorespaces
+}{%
+  \popQED\endtrivlist\@endpefalse
+  \addvspace{6pt plus 6pt} % some space after
+}
+\makeatother
+% Reduce spacing around section headings?
+%
+%-----------------------------------------------------------------------------
+% To use external packages for specific needs, 
+% get approval before adding them here (they
+% should not override general AIMS house style and layout).
+%
+% Examples:
+% 
+% Load caption before arabtex
+\usepackage{caption} %many figures in one figure (note subfigure and subfig are deprecated) 
+\usepackage{subcaption} %many figures in one figure (note subfigure and subfig are deprecated) 
+% For Arabic
+%\usepackage{arabtex}
+%\usepackage{utf8}
+%\setcode{utf8}
+% For tables:
+\usepackage{booktabs} % \toprule, \midrule, \bottomrule
+\usepackage{array}    % \newcolumntype
+% 
+% For figures:
+%\usepackage[below,section]{placeins} % use \FloatBarrier in the body to really force a float somewhere. Please limit use.
+\usepackage{float}  %"H" placement spec, for **really here** (i.e. not float)
+%
+% For code and algorithms
+\usepackage{moreverb}   % \verbatimtabinput
+% \usepackage{listings} % more flexible and complicated 
+                        % than moreverb and algorithm
+% 
+% Others
+% \usepackage[all]{xy}  %  if you use this uncomment \usepackage{etex} above to fix a conflict with tikz.
+% \usepackage{sagetex}
+% \usepackage{siunitx} % to typeset numbers, units, align decimals in tables.
+% \usepackage{dcolumn} % less flexible but maybe faster than siunitx above.
+% \usepackage{mathtools} % More maths, e.g. \mathclap.
+%
+% Others may be landscape, longtable, algorithm, algorithmic, etc.
+% 
+% ----------------------------------------------------------------------------
+% An AIMS Essay can use the sectioning commands "\chapter", "\section",
+% "\subsection". No "\subsubsection", "\paragraph", etc. They are disabled.
+% 
+% For Theorems and such, use the environments defined here:
+% \begin{thm}...\end{thm} (or "lem", "defn", etc)
+% 
+% We put the number to the left of the Theorem heading.
+\swapnumbers 
+% 
+% Theorems are in italics.
+\theoremstyle{plain}
+\newtheorem{thm}[subsection]{Theorem}
+%
+% Rest is not in italics.
+\theoremstyle{definition} 
+\newtheorem{lem}[subsection]{Lemma}
+\newtheorem{cor}[subsection]{Corollary}
+\newtheorem{conj}[subsection]{Conjecture}
+\newtheorem{pro}[subsection]{Proposition}
+\newtheorem{exa}[subsection]{Example}
+\newtheorem{defn}[subsection]{Definition}
+\newtheorem{rem}[subsection]{Remark}
+% 
+% If you have no theorems, but a lot of equations, maybe the
+% following two lines are good. Beware of corresponding Equation
+% and Example numbers though! Number equations by sections.
+% 
+\numberwithin{equation}{section}
